@@ -8,21 +8,33 @@
   integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
   crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<<<<<<< HEAD
   <meta name="viewport" content="width=device-width, initial-scale=1">
+||||||| merged common ancestors
+=======
+<<<<<<< HEAD
+  <!--This line enables touch zooming. To disable zoom use:
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1, maximum-scale=1, user-scalable=no">
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+||||||| merged common ancestors
+=======
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+>>>>>>> Master
+>>>>>>> Mobile
   <style>
-  	.main {
-      margin-top: -5%;
-      margin-bottom: -5%;
-      margin-left: 10em;
-      margin-right: 10em;
+    .main{
+      padding-top: 2em;
     }
     .page {
       background-color: #EDFFF7;
-      margin: 100px;
+      margin: auto;
       color: #0F663E;
   		font-family: Raleway;
       padding: 2em;
-
+      max-width: 1000px;
+      max-height: 1000px;
     }
     .img-fluid {
       height: auto;
@@ -30,8 +42,13 @@
 
     }
     .resume-contents {
-      text-align: left;
+      text-align: center;
 
+    }
+    .resume-contents ul {
+      text-align:center;
+      list-style-position: inside;
+      margin: auto;
     }
     .section-headings {
       font-weight: bold;
@@ -43,48 +60,35 @@
       border-width: 1px;
       border-color: black;
     }
-    .well{
-      background-color: #EDFFF7;
-      padding-top: 1px;
-      padding-left: 1px;
-      padding-right: 1px;
-      margin-left: 2em;
-      margin-right: 2em;
-    }
-    .resume-contents {
-      margin: auto;
-    }
-    ul {
-      display: inline-block;
-      text-align: left;
-    }
     .footer {
       text-align: center;
+      padding-bottom: 0px;
     }
   	</style>
 </head>
 <body class="main">
-  <div class="page">
-    <div class="title">
-      <h1 class="text-center" id="main-title">
-        Brett Armstrong, Double Bass</h1>
-      <h3 class="text-center" id="subtitle">Resume</h3>
-  		<!--Link to main image currently hosted in AWS-->
-      <div class="well">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="page">
+        <h1 class="text-center"><strong>Brett Armstrong, Double Bass</strong></h1>
+        <h3 class="text-center">Professional Resume</h3>
+  		        <!--Link to main image currently hosted in AWS-->
     	   <div class="image">
-           <img src="https://s3-us-west-2.amazonaws.com/brett-armstrong-bass/Website/BrettBass3_1.1.2.jpg"
-           class="img-fluid" alt="Brett Armstrong Performing">
-           <p>Brett Armstrong Performing</p>
-         </div>
-      </div>
-    </div>
-    <div class="resume-contents">
-      <div style="width: 25%; margin-left: auto; margin-right: auto;">
-        <ul>
-          <h4 class="section-headings">Orchestra Experience</h4>
-          <li>Cheyenne Symphony Orchestra, Principal 2016</li>
-          <li>Greeley Philharmonic Orchestra, Principal 2016</li>
-        </ul>
+          <img src="https://s3-us-west-2.amazonaws.com/brett-armstrong-bass/Website/BrettBass3_1.1.2.jpg"
+               class="img-fluid" alt="Brett Armstrong Performing">
+          <p class="text-center" style="padding-top: 2px;">Brett Armstrong Performing</p>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="resume-contents">
+              <ul>
+                <h4 class="text-center"><strong>Orchestra Experience</strong></h4>
+                <li>Cheyenne Symphony Orchestra, Principal 2016</li>
+                <li>Greeley Philharmonic Orchestra, Principal 2016</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
