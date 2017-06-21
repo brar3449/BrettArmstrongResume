@@ -14,7 +14,9 @@
   -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-
+    .main{
+      padding-top: 2em;
+    }
     .page {
       background-color: #EDFFF7;
       margin: auto;
@@ -30,8 +32,13 @@
 
     }
     .resume-contents {
-      text-align: left;
+      text-align: center;
 
+    }
+    .resume-contents ul {
+      text-align:center;
+      list-style-position: inside;
+      margin: auto;
     }
     .section-headings {
       font-weight: bold;
@@ -43,13 +50,6 @@
       border-width: 1px;
       border-color: black;
     }
-    .resume-contents {
-      margin: auto;
-    }
-    ul {
-      display: inline-block;
-      text-align: left;
-    }
     .footer {
       text-align: center;
       padding-bottom: 0px;
@@ -60,20 +60,23 @@
   <div class="container-fluid">
     <div class="row">
       <div class="page">
-        <h1 class="text-center">Brett Armstrong, Double Bass</h1>
-        <h3 class="text-center">Resume</h3>
+        <h1 class="text-center"><strong>Brett Armstrong, Double Bass</strong></h1>
+        <h3 class="text-center">Professional Resume</h3>
   		        <!--Link to main image currently hosted in AWS-->
     	   <div class="image">
           <img src="https://s3-us-west-2.amazonaws.com/brett-armstrong-bass/Website/BrettBass3_1.1.2.jpg"
                class="img-fluid" alt="Brett Armstrong Performing">
-          <p style="padding-top: 2px;">Brett Armstrong Performing</p>
+          <p class="text-center" style="padding-top: 2px;">Brett Armstrong Performing</p>
         </div>
-        <div class="resume-contents">
-          <ul>
-            <h4><strong>Orchestra Experience</strong></h4>
-            <li>Cheyenne Symphony Orchestra, Principal 2016</li>
-            <li>Greeley Philharmonic Orchestra, Principal 2016</li>
-          </ul>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="resume-contents">
+              <ul>
+                <h4 class="text-center"><strong>Orchestra Experience</strong></h4>
+                <li>Cheyenne Symphony Orchestra, Principal 2016</li>
+                <li>Greeley Philharmonic Orchestra, Principal 2016</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
