@@ -14,19 +14,15 @@
   -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-  	.main {
-      margin-top: ;
-      margin-bottom: -5%;
-      margin-left: 10em;
-      margin-right: 10em;
-    }
+
     .page {
       background-color: #EDFFF7;
       margin: auto;
       color: #0F663E;
   		font-family: Raleway;
       padding: 2em;
-
+      max-width: 1000px;
+      max-height: 1000px;
     }
     .img-fluid {
       height: auto;
@@ -71,27 +67,24 @@
 <body class="main">
   <div class="container-fluid">
     <div class="row">
-      <div class="page col-xs-12">
-        <div class="title col-xs-12">
-          <h1 class="text-center" id="main-title">
-            Brett Armstrong, Double Bass</h1>
-            <h3 class="text-center" id="subtitle">Resume</h3>
+      <div>
+        <div class="page">
+          <h1 class="text-center">Brett Armstrong, Double Bass</h1>
+          <h3 class="text-center">Resume</h3>
   		        <!--Link to main image currently hosted in AWS-->
-              <div class="well">
-    	           <div class="image">
-                   <img src="https://s3-us-west-2.amazonaws.com/brett-armstrong-bass/Website/BrettBass3_1.1.2.jpg"
-           class="img-fluid" alt="Brett Armstrong Performing">
-           <p style="padding-top: 2px;">Brett Armstrong Performing</p>
-                </div>
+    	    <div class="image">
+            <img src="https://s3-us-west-2.amazonaws.com/brett-armstrong-bass/Website/BrettBass3_1.1.2.jpg"
+                 class="img-fluid" alt="Brett Armstrong Performing">
+            <p style="padding-top: 2px;">Brett Armstrong Performing</p>
+          </div>
+          <div class="resume-contents">
+            <div>
+            <ul>
+              <h4><strong>Orchestra Experience</strong></h4>
+              <li>Cheyenne Symphony Orchestra, Principal 2016</li>
+              <li>Greeley Philharmonic Orchestra, Principal 2016</li>
+            </ul>
             </div>
-        </div>
-        <div class="resume-contents">
-          <div style="width: 25%; margin-left: auto; margin-right: auto;">
-          <ul>
-            <h4 class="section-headings">Orchestra Experience</h4>
-            <li>Cheyenne Symphony Orchestra, Principal 2016</li>
-            <li>Greeley Philharmonic Orchestra, Principal 2016</li>
-          </ul>
           </div>
         </div>
       </div>
